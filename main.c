@@ -1,5 +1,4 @@
 #include "expressao.h"
-#include "expressao.c"
 
 int main() {
     Expressao expr;
@@ -7,7 +6,7 @@ int main() {
     char conta[100];
 
     while (1) {
-        printf("Digite a continuação da conta ou 'f' para sair: ");
+        printf("Digite a continuacao da conta ou 'f' para sair: ");
         fgets(conta, sizeof(conta), stdin);
         conta[strcspn(conta, "\n")] = '\0';
 

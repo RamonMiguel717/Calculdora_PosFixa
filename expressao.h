@@ -8,9 +8,9 @@
 #include <math.h>
 
 typedef struct {
-    char posFixa[512];     
-    char inFixa[512];   
-    float Valor;           
+    char posFixa[512];
+    char inFixa[512];
+    float Valor;
 } Expressao;
 
 typedef struct {
@@ -18,7 +18,7 @@ typedef struct {
     int top;
 } Lista;
 
-void push(Lista *lista, char *valor);
+int push(Lista *lista, char *valor);
 char *pop(Lista *lista);
 char *getFormaInFixa(char *Str);
 float getValor(char *Str);
